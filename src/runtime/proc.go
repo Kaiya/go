@@ -129,7 +129,12 @@ var main_inittask initTask
 // it is closed, meaning cgocallbackg can reliably receive from it.
 var main_init_done chan bool
 
+/*
 //go:linkname main_main main.main
+func main_main()
+*/
+
+//go:linkname main_main main.kaiya
 func main_main()
 
 // mainStarted indicates that the main M has started.
